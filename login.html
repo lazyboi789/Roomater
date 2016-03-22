@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Login
+    </title>
+    <link rel=stylesheet type="text/css" href="CSS/login.css" />
+</head>
+
+<body>
+    <div class="fixed-navigation">
+        <a href="#" class='navigation-link'>Roomater</a>
+        <div class="navigation-login">
+            <form method=post action="login.php" class="login-form">
+                <input type="text" name="usernameTxt" placeholder="Username" />
+                <input type="password" name="passwordTxt" placeholder="Password" />
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+    </div>
+    <div class="sign-up">
+        <h3 class="sign-up-header">Sign up!</h3>
+        <form class="register-form">
+            <label>Username: </label>
+            <input type="text" name="usernameTxt" placeholder="Username" />
+            <label>Password: </label>
+            <input type="text" name="passwordTxt" placeholder="Password" />
+            <label>Email: </label>
+            <input type="text" name="emailTxt" placeholder="Email" />
+            <button type="submit" class="register-btn">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
