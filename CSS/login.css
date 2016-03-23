@@ -1,7 +1,148 @@
+/*
+$body-bg: #c1bdba;
+$form-bg: #13232f;
+$white: #ffffff;
+$main: #1ab188;
+$main-light: lighten($main, 5%);
+$main-dark: darken($main, 5%);
+$gray-light: #a0b3b0;
+$gray: #ddd;
+*/
+
 * {
     font-family: "Arial", "Verdana", sans-serif;
 }
 body
 {
-    background-color:#fff;
+    background-color:#c1bdba;
+    padding-top:50px;
+}
+
+.fixed-navigation
+{
+    width:100%;
+    background-color: #13232f;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    margin:0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.navigation-link
+{
+    display:inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation-login
+{
+    display: inline-block;
+    float:right;
+    margin-right: 20px;
+}
+.login-form > input
+{
+    background:none;
+    border:none;
+    height:25px;
+    border: 1px solid #a0b3b0;
+    padding-left: 10px;
+    font-size: large;
+    color:#fff;
+}
+
+.login-form > input::-webkit-input-placeholder
+{
+    color:#a0b3b0;
+}
+.login-btn
+{
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    background: #1ab188;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+}
+.login-btn:hover
+{
+    background:darken(#1ab188, 5%);
+}
+.login-btn:focus, .login-form>input
+{
+    outline:0;
+}
+
+.sign-up
+{
+    width:600px;
+    background:rgba(19, 35, 47, 0.9);
+    padding:40px;
+    margin:40px auto;
+    border-radius: 3px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.9);
+}
+.sign-up-header
+{
+    color:white;
+    display: inline-block;
+    width:100%;
+    text-align:center;
+}
+.register-form > input, .top-row > input, .middle-row > input, .middle-row-password > input
+{
+    display: inline-block;
+    font-size:22px;
+    padding: 5px 10px;
+    background:none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color:#fff;
+    border-radius: 0;
+    width:250px;
+    margin-bottom:20px;
+    margin-right:10px;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition:border-color .25s ease, box-shadow .25s ease;
+    
+}
+.register-form input[name='passwordTxt']
+{
+    
+}
+input:focus
+{
+    outline:0;
+    border-color:#1ab188;
+}
+.register-btn
+{
+     border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #1ab188;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+}
+
+button:hover, button:focus {
+  background: #179b77;
+  cursor:pointer;
 }

@@ -20,14 +20,21 @@
         </div>
     </div>
     <div class="sign-up">
-        <h3 class="sign-up-header">Sign up!</h3>
+        <h2 class="sign-up-header">Sign up!</h2>
         <form class="register-form">
-            <label>Username: </label>
-            <input type="text" name="usernameTxt" placeholder="Username" />
-            <label>Password: </label>
-            <input type="text" name="passwordTxt" placeholder="Password" />
-            <label>Email: </label>
-            <input type="text" name="emailTxt" placeholder="Email" />
+            <div class="top-row">
+                <input type="text" required name="firstnameTxt" placeholder="First Name" />
+            <input type="text" required name="lastnameTxt" placeholder="Last Name" />
+            </div>
+            <div class="middle-row">
+                <input type="text" required name="usernameTxt" placeholder="Username" />
+            </div>
+            <div class="middle-row-password">
+                <input type="password" required name="passwordTxt" placeholder="Password" />
+                <input type="password" required name="confPasswordTxt" placeholder="Confirm Password" />
+            </div>
+            
+            <input type="text" required name="emailTxt" placeholder="Email" />
             <button type="submit" class="register-btn">Register</button>
         </form>
     </div>
